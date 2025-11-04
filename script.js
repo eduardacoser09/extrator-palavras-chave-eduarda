@@ -52,5 +52,5 @@ function tiraPalavrasRuins(palavras) {
             palavrasBoas.push(palavra);
         }
     }
-    return PALAVRAS_RUINS;
+    return palavrasBoas;
 }
