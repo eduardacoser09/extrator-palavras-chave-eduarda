@@ -29,13 +29,13 @@ function processaTexto(texto) {
     return ordenadas.slice(0, 10);
 }
 
-function contaFrequencias(palavras) {
+function contaFrequencias(palavras){
     let frequencias = {};
 
     for (let i of palavras) {
         frequencias[i] = 0;
 
-        for (let j of palavras) {
+        for (let j of palavras){
             if (i == j) {
                 frequencias[i]++;
             }
@@ -45,7 +45,7 @@ function contaFrequencias(palavras) {
 }
 
 function tiraPalavrasRuins(palavras) {
-    const PALAVRAS_RUINS = new Set(["para", "nós", "das", "como", "que"]);
+    
     const palavrasBoas = [];
 
     for (let palavra of palavras) {
